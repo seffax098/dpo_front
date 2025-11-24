@@ -9,193 +9,302 @@
 
 <body>
     <header>
-        <div class="header--top">
-            <img src="assets/icons/Search.png" alt="search">
-            <h1 class="header--name">Avion</h1>
-            <img src="assets/icons/Shopping--cart.png" alt="shopping-cart">
-            <img src="assets/icons/User--avatar.png" alt="user-avatar">
+        <div class="header__top">
+            <div class="header__left">
+                <button class="button__search">
+                    <img src="assets/icons/Search.png" alt="search">
+                </button>
+            </div>
+            <a class="header__logo" href="/">Avion</a>
+            <div class="header__right">
+                <button class="header__cart">
+                    <img src="assets/icons/Shopping--cart.png" alt="shopping-cart">
+                </button>
+                <a class="header__profile" href="/">
+                    <img src="assets/icons/User--avatar.png" alt="user-avatar">
+                </a>
+            </div>
         </div>
         <hr>
-        <nav>
-            <ul>
-                <li><a href="">Plant post</a></li>
-                <li><a href="">Ceramics</a></li>
-                <li><a href="">Tables</a></li>
-                <li><a href="">Chairs</a></li>
-                <li><a href="">Crockery</a></li>
-                <li><a href="">Tableware</a></li>
-                <li><a href="">Cutlery</a></li>
-            </ul>
-        </nav>
+        <div class="header__bottom">
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="/">Plant post</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/">Ceramics</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/">Tables</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/">Chairs</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/">Crockery</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/">Tableware</a></li>
+                    <li class="nav__item"><a class="nav__link" href="/">Cutlery</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="about-brand">
-            <div class="left">
-                <h2>The furniture brand for the future, with timeless designs</h2>
-                <button>View collection</button>
-                <p>A&nbsp;new era in&nbsp;eco friendly furniture with Avelon, the French luxury retail brand with nice
-                    fonts, tasteful colors and a&nbsp;beautiful way to&nbsp;display things digitally using modern web
-                    technologies.</p>
-            </div>
-            <div class="right">
-                <img src="assets/img/Right_Image.png" alt="chair">
+            <div class="container brand__container">
+                <div class="brand__content">
+                    <div class="brand__left">
+                        <div class="left__top">
+                            <h2 class="brand__title">The furniture brand for the future, with timeless designs</h2>
+                            <a class="collection" href="/">View collection</a>
+                        </div>
+                        <p class="brand__description">A&nbsp;new era in&nbsp;eco friendly furniture with Avelon, the
+                            French
+                            luxury retail brand
+                            with nice
+                            fonts, tasteful colors and a&nbsp;beautiful way to&nbsp;display things digitally using
+                            modern
+                            web
+                            technologies.</p>
+                    </div>
+                    <div class="brand__right">
+                        <img src="assets/img/Right_Image.png" alt="chair">
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="brand-different">
-            <h2>What makes our brand different</h2>
-            <div>
-                <article>
-                    <img src="assets/icons/Delivery.png" alt="">
-                    <h3>Next day as&nbsp;standard</h3>
-                    <p>Order before 3pm and get your order the next day as&nbsp;standard</p>
-                </article>
-                <article>
-                    <img src="assets/icons/Checkmark--outline.png" alt="">
-                    <h3>Made by&nbsp;true artisans</h3>
-                    <p>Handmade crafted goods made with real passion and craftmanship</p>
-                </article>
-                <article>
-                    <img src="assets/icons/Purchase.png" alt="">
-                    <h3>Unbeatable prices</h3>
-                    <p>For our materials and quality you won&rsquo;t find better prices anywhere</p>
-                </article>
-                <article>
-                    <img src="assets/icons/Sprout.png" alt="">
-                    <h3>Recycled packaging</h3>
-                    <p>We&nbsp;use 100% recycled packaging to&nbsp;ensure our footprint is&nbsp;manageable</p>
-                </article>
+            <div class="container different__container">
+                <h2 class="different__title">What makes our brand different</h2>
+                <div class="different__content">
+                    <div class="differents__list">
+                        <div class="different">
+                            <img class="different__icon" src="assets/icons/Delivery.png" alt="">
+                            <h3 class="different__title">Next day as&nbsp;standard</h3>
+                            <p class="different__description">Order before 3pm and get your order the next day
+                                as&nbsp;standard</p>
+                        </div>
+                        <div class="different">
+                            <img class="different__icon" src="assets/icons/Checkmark--outline.png" alt="">
+                            <h3 class="different__title">Made by&nbsp;true artisans</h3>
+                            <p class="different__description">Handmade crafted goods made with real passion and
+                                craftmanship
+                            </p>
+                        </div>
+                        <div class="different">
+                            <img class="different__icon" src="assets/icons/Purchase.png" alt="">
+                            <h3 class="different__title">Unbeatable prices</h3>
+                            <p class="different__description">For our materials and quality you won&rsquo;t find better
+                                prices anywhere</p>
+                        </div>
+                        <div class="different">
+                            <img class="different__icon" src="assets/icons/Sprout.png" alt="">
+                            <h3 class="different__title">Recycled packaging</h3>
+                            <p class="different__description">We&nbsp;use 100% recycled packaging to&nbsp;ensure our
+                                footprint is&nbsp;manageable</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="ceramics">
-            <h2>New ceramics</h2>
-            <div class="ceramics--goods">
-                <article>
-                    <img src="assets/img/Photo.png" alt="chair">
-                    <h3>The Dandy chair</h3>
-                    <p>&pound;250</p>
-                </article>
-                <article>
-                    <img src="assets/img/Photo(1).png" alt="vase">
-                    <h3>Rustic Vase Set</h3>
-                    <p>&pound;155</p>
-                </article>
-                <article>
-                    <img src="assets/img/Photo(1).png" alt="vase">
-                    <h3>The Silky Vase</h3>
-                    <p>&pound;125</p>
-                </article>
-                <article>
-                    <img src="assets/img/Photo(2).png" alt="lamp">
-                    <h3>The Lucy Lamp</h3>
-                    <p>&pound;399</p>
-                </article>
+        <section class="new-products">
+            <div class="container new-products__container">
+                <h2 class="new-products__title">New ceramics</h2>
+                <ul class="new-products__list">
+                    <li class="new-products__item">
+                        <a class="new-products__link" href="/">
+                            <article class="good">
+                                <img class="good__img" src="assets/img/Photo.png" alt="chair">
+                                <h3 class="good__title">The Dandy chair</h3>
+                                <p class="good__price">&pound;250</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="new-products__item">
+                        <a class="new-products__link" href="/">
+                            <article class="good">
+                                <img class="good__img" src="assets/img/Photo(1).png" alt="vase">
+                                <h3 class="good__title">Rustic Vase Set</h3>
+                                <p class="good__price">&pound;155</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="new-products__item">
+                        <a class="new-products__link" href="/">
+                            <article class="good">
+                                <img class="good__img" src="assets/img/Photo(1).png" alt="vase">
+                                <h3 class="good__title">The Silky Vase</h3>
+                                <p class="good__price">&pound;125</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="new-products__item">
+                        <a class="new-products__link" href="/">
+                            <article class="good">
+                                <img class="good__img" src="assets/img/Photo(2).png" alt="lamp">
+                                <h3 class="good__title">The Lucy Lamp</h3>
+                                <p class="good__price">&pound;399</p>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+                <a class="collection" href="/">View collection</a>
             </div>
-            <button>View collection</button>
         </section>
 
-        <section class="popular-products">
-            <h2>Our popular products</h2>
-            <div class="popular--goods">
-                <article>
-                    <img src="assets/img/Large.png" alt="sofa">
-                    <h3>The Poplar suede sofa</h3>
-                    <p>&pound;980</p>
-                </article>
-                <article>
-                    <img src="assets/img/Photo.png" alt="chair">
-                    <h3>The Dandy chair</h3>
-                    <p>&pound;250</p>
-                </article>
-                <article>
-                    <img src="assets/img/Photo(3).png" alt="chair">
-                    <h3>The Dandy chair</h3>
-                    <p>&pound;250</p>
-                </article>
+        <section class="pop-products">
+            <div class="container pop-products__container">
+                <h2 class="pop-products__title">Our popular products</h2>
+
+                <ul class="pop-products__list">
+                    <li class="pop-products__item">
+                        <a class="pop-products__link" href="/">
+                            <article class="good large-good">
+                                <img class="good__img" src="assets/img/Large.png" alt="sofa">
+                                <h3 class="good__title">The Poplar suede sofa</h3>
+                                <p class="good__price">&pound;980</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="pop-products__item">
+                        <a class="pop-products__link" href="/">
+                            <article class="good">
+                                <img class="good__img" src="assets/img/Photo.png" alt="chair">
+                                <h3 class="good__title">The Dandy chair</h3>
+                                <p class="good__price">&pound;250</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="pop-products__item">
+                        <a class="pop-products__link" href="/">
+                            <article class="good">
+                                <img class="good__img" src="assets/img/Photo(3).png" alt="chair">
+                                <h3 class="good__title">The Dandy chair</h3>
+                                <p class="good__price">&pound;250</p>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+                <a class="collection" href="/">View collection</a>
             </div>
-            <button>View collection</button>
         </section>
 
         <section class="club">
-            <div class="club--join">
-                <h2>Join the club and get the benefits</h2>
-                <p>Sign up&nbsp;for our newsletter and receive exclusive offers on&nbsp;new ranges, sales, pop
-                    up&nbsp;stores and more
-                </p>
-                <div>
-                    <input type="text" placeholder="your@email.com">
-                    <button>Sign up</button>
+            <div class="container club__container">
+                <div class="club__content">
+                    <div class="club__info">
+                        <h2 class="club__title">Join the club and get the benefits</h2>
+                        <p class="club__description">Sign up&nbsp;for our newsletter and receive exclusive offers
+                            on&nbsp;new ranges, sales, pop
+                            up&nbsp;stores and more
+                        </p>
+                    </div>
+                    <form class="club__form" action="POST">
+                        <input class="club__input" type="email" placeholder="your@email.com">
+                        <button class="club__submit" type="submit">Sign up</button>
+                    </form>
                 </div>
             </div>
         </section>
 
         <section class="brand-history">
-            <div class="left">
-                <h2>From a&nbsp;studio in&nbsp;London to&nbsp;a&nbsp;global brand with over 400 outlets</h2>
-                <p>When we&nbsp;started Avion, the idea was simple. Make high quality furniture affordable and available
-                    for
-                    the mass market. </p>
-                <p>Handmade, and lovingly crafted furniture and homeware is&nbsp;what we&nbsp;live, breathe and design
-                    so&nbsp;our
-                    Chelsea boutique become the hotbed for the London interior design community.</p>
-                <button>Get in&nbsp;touch</button>
-            </div>
-            <div class="right">
-                <img src="assets/img/Image.png" alt="">
+            <div class="container history__container">
+                <div class="history__left">
+                    <h2 class="history__title">From a&nbsp;studio in&nbsp;London to&nbsp;a&nbsp;global brand with over
+                        400 outlets</h2>
+                    <p class="history__description">When we&nbsp;started Avion, the idea was simple. Make high quality
+                        furniture affordable and
+                        available
+                        for
+                        the mass market./n
+                        Handmade, and lovingly crafted furniture and homeware is&nbsp;what we&nbsp;live, breathe and
+                        design
+                        so&nbsp;our
+                        Chelsea boutique become the hotbed for the London interior design community.</p>
+                    <a class="history__link" href="/">Get in&nbsp;touch</a>
+                </div>
+                <div class="history__right">
+                    <img src="assets/img/Image.png" alt="">
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer--nav">
-            <nav class="nav--products">
-                <ul>
-                    <li><a class="nav--head" href="">Menu</a></li>
-                    <li><a href="">New arrivals</a></li>
-                    <li><a href="">Best sellers</a></li>
-                    <li><a href="">Revently viewed</a></li>
-                    <li><a href="">Ppopular this week</a></li>
-                    <li><a href="">All products</a></li>
-                </ul>
-            </nav>
-            <nav class="nav--categories">
-                <ul>
-                    <li><a class="nav--head" href="">Categories</a></li>
-                    <li><a href="">Crockery</a></li>
-                    <li><a href="">Furniture</a></li>
-                    <li><a href="">Homeware</a></li>
-                    <li><a href="">Plant post</a></li>
-                    <li><a href="">Chairs</a></li>
-                </ul>
-            </nav>
-            <nav class="nav--company">
-                <ul>
-                    <li><a class="nav--head" href="">Our Company</a></li>
-                    <li><a href="">About&nbsp;us</a></li>
-                    <li><a href="">Vacancies</a></li>
-                    <li><a href="">Contact us</a></li>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href="">Returns policy</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="container footer__container">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <div class="nav__block">
+                        <h2 class="footer__nav__head">Menu</h2>
+                        <nav class="footer__nav">
+                            <ul class="nav__list">
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">New arrivals</a>
+                                </li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Best sellers</a>
+                                </li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Revently viewed</a>
+                                </li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Popular this
+                                        week</a>
+                                </li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">All products</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="nav__block">
+                        <h2 class="footer__nav__head">Categories</h2>
+                        <nav class="footer__nav">
+                            <ul class="nav__list">
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Crockery</a></li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Furniture</a></li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Homeware</a></li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Plant post</a></li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Chairs</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="nav__block">
+                        <h2 class="footer__nav__head">Our Company</h2>
+                        <nav class="footer__nav">
+                            <ul class="nav__list">
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">About&nbsp;us</a>
+                                </li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Vacancies</a></li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Contact us</a></li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Privacy</a></li>
+                                <li class="footer__nav__item"><a class="footer__nav__link" href="/">Returns policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
 
-        <div>
-            <p>Join our mailing list</p>
-            <div>
-                <input type="text" placeholder="your@email.com">
-                <button>Sign up</button>
+                <div class="footer__right">
+                    <form class="footer__form" action="POST">
+                        <label class="form__label">Join our mailing list</label>
+                        <div class="form__action">
+                            <input class="footer__input" type="email" placeholder="your@email.com">
+                            <button class="footer__submit" type="submit">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-        </div>
-        <hr>
-        <div>
-            <p>Copyright</p>
-            <div class="other--site">
-                <img src="assets/icons/Logo--linkedin.png" alt="linkedin">
-                <img src="assets/icons/Logo--pinterest.png" alt="pinterest">
-                <img src="assets/icons/Logo--skype.png" alt="skype">
+            <hr>
+            <div class="footer__bottom">
+                <div class="footer__bottom__container">
+                    <div class="footer__copyright">
+                        <p class="copyright__text">Copyright 2022 Avion LTD</p>
+                    </div>
+                    <div class="other-site">
+                        <ul class="other-site__list">
+                            <li class="other-site__item"><a class="other-site__link" href="/"><img
+                                        class="other-site__icon" src="assets/icons/Logo--linkedin.png"
+                                        alt="linkedin"></a></li>
+                            <li class="other-site__item"><a class="other-site__link" href="/"><img
+                                        class="other-site__icon" src="assets/icons/Logo--pinterest.png"
+                                        alt="pinterest"></a></li>
+                            <li class="other-site__item"><a class="other-site__link" href="/"><img
+                                        class="other-site__icon" src="assets/icons/Logo--skype.png" alt="skype"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
