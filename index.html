@@ -5,19 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <div class="header__top">
             <div class="header__left">
-                <button class="button__search">
-                    <img src="assets/icons/Search.png" alt="search">
+                <button class="button__search" aria-label="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                        viewBox="0,0,256,256">
+                        <g fill="#1a1a1a" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(8.53333,8.53333)">
+                                <path
+                                    d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
                 </button>
             </div>
-            <a class="header__logo" href="/">Avion</a>
+            <a class="header__logo" href="/"><img src="assets/img/logo.png" alt="AVION"></a>
             <div class="header__right">
-                <button class="header__cart">
+                <button class="header__cart" aria-label="cart">
                     <img src="assets/icons/Shopping--cart.png" alt="shopping-cart">
                 </button>
                 <a class="header__profile" href="/">
@@ -25,7 +38,7 @@
                 </a>
             </div>
         </div>
-        <hr>
+        <hr style="border: 0; height: 2px; background-color: #ebe8f4;">
         <div class="header__bottom">
             <nav class="header__nav">
                 <ul class="nav__list">
@@ -44,11 +57,11 @@
     <main>
         <section class="about-brand">
             <div class="container brand__container">
-                <div class="brand__content">
-                    <div class="brand__left">
+                <div class="brand__left">
+                    <div class="brand__content">
                         <div class="left__top">
                             <h2 class="brand__title">The furniture brand for the future, with timeless designs</h2>
-                            <a class="collection" href="/">View collection</a>
+                            <a class="brand__collection" href="/">View collection</a>
                         </div>
                         <p class="brand__description">A&nbsp;new era in&nbsp;eco friendly furniture with Avelon, the
                             French
@@ -59,16 +72,16 @@
                             web
                             technologies.</p>
                     </div>
-                    <div class="brand__right">
-                        <img src="assets/img/Right_Image.png" alt="chair">
-                    </div>
+                </div>
+                <div class="brand__right">
+                    <img src="assets/img/Right_Image.png" alt="chair">
                 </div>
             </div>
         </section>
 
         <section class="brand-different">
             <div class="container different__container">
-                <h2 class="different__title">What makes our brand different</h2>
+                <h2 class="differents__title">What makes our brand different</h2>
                 <div class="different__content">
                     <div class="differents__list">
                         <div class="different">
@@ -142,7 +155,9 @@
                         </a>
                     </li>
                 </ul>
-                <a class="collection" href="/">View collection</a>
+                <div class="collection">
+                    <a class="collection__link" href="/">View collection</a>
+                </div>
             </div>
         </section>
 
@@ -179,7 +194,9 @@
                         </a>
                     </li>
                 </ul>
-                <a class="collection" href="/">View collection</a>
+                <div class="collection">
+                    <a class="collection__link" href="/">View collection</a>
+                </div>
             </div>
         </section>
 
@@ -193,7 +210,7 @@
                             up&nbsp;stores and more
                         </p>
                     </div>
-                    <form class="club__form" action="POST">
+                    <form class="club__form">
                         <input class="club__input" type="email" placeholder="your@email.com">
                         <button class="club__submit" type="submit">Sign up</button>
                     </form>
@@ -203,22 +220,34 @@
 
         <section class="brand-history">
             <div class="container history__container">
-                <div class="history__left">
-                    <h2 class="history__title">From a&nbsp;studio in&nbsp;London to&nbsp;a&nbsp;global brand with over
-                        400 outlets</h2>
-                    <p class="history__description">When we&nbsp;started Avion, the idea was simple. Make high quality
-                        furniture affordable and
-                        available
-                        for
-                        the mass market./n
-                        Handmade, and lovingly crafted furniture and homeware is&nbsp;what we&nbsp;live, breathe and
-                        design
-                        so&nbsp;our
-                        Chelsea boutique become the hotbed for the London interior design community.</p>
-                    <a class="history__link" href="/">Get in&nbsp;touch</a>
-                </div>
-                <div class="history__right">
-                    <img src="assets/img/Image.png" alt="">
+                <div class="history__content">
+                    <div class="history__left">
+                        <div class="history__top">
+                            <h2 class="history__title">From a&nbsp;studio in&nbsp;London to&nbsp;a&nbsp;global brand
+                                with
+                                over
+                                400 outlets</h2>
+                            <p class="history__description">When we&nbsp;started Avion, the idea was simple. Make high
+                                quality
+                                furniture affordable and
+                                available
+                                for
+                                the mass market.</p>
+                            <p class="history__description">
+                                Handmade, and lovingly crafted furniture and homeware is&nbsp;what we&nbsp;live, breathe
+                                and
+                                design
+                                so&nbsp;our
+                                Chelsea boutique become the hotbed for the London interior design community.
+                            </p>
+                        </div>
+                        <div class="history__button">
+                            <a class="history__link" href="/">Get in&nbsp;touch</a>
+                        </div>
+                    </div>
+                    <div class="history__right">
+                        <img src="assets/img/Image.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -231,7 +260,7 @@
                     <div class="nav__block">
                         <h2 class="footer__nav__head">Menu</h2>
                         <nav class="footer__nav">
-                            <ul class="nav__list">
+                            <ul class="footer__nav__list">
                                 <li class="footer__nav__item"><a class="footer__nav__link" href="/">New arrivals</a>
                                 </li>
                                 <li class="footer__nav__item"><a class="footer__nav__link" href="/">Best sellers</a>
@@ -249,7 +278,7 @@
                     <div class="nav__block">
                         <h2 class="footer__nav__head">Categories</h2>
                         <nav class="footer__nav">
-                            <ul class="nav__list">
+                            <ul class="footer__nav__list">
                                 <li class="footer__nav__item"><a class="footer__nav__link" href="/">Crockery</a></li>
                                 <li class="footer__nav__item"><a class="footer__nav__link" href="/">Furniture</a></li>
                                 <li class="footer__nav__item"><a class="footer__nav__link" href="/">Homeware</a></li>
@@ -261,7 +290,7 @@
                     <div class="nav__block">
                         <h2 class="footer__nav__head">Our Company</h2>
                         <nav class="footer__nav">
-                            <ul class="nav__list">
+                            <ul class="footer__nav__list">
                                 <li class="footer__nav__item"><a class="footer__nav__link" href="/">About&nbsp;us</a>
                                 </li>
                                 <li class="footer__nav__item"><a class="footer__nav__link" href="/">Vacancies</a></li>
@@ -275,7 +304,7 @@
                 </div>
 
                 <div class="footer__right">
-                    <form class="footer__form" action="POST">
+                    <form class="footer__form">
                         <label class="form__label">Join our mailing list</label>
                         <div class="form__action">
                             <input class="footer__input" type="email" placeholder="your@email.com">
@@ -285,7 +314,6 @@
                 </div>
 
             </div>
-            <hr>
             <div class="footer__bottom">
                 <div class="footer__bottom__container">
                     <div class="footer__copyright">
@@ -293,14 +321,80 @@
                     </div>
                     <div class="other-site">
                         <ul class="other-site__list">
-                            <li class="other-site__item"><a class="other-site__link" href="/"><img
-                                        class="other-site__icon" src="assets/icons/Logo--linkedin.png"
-                                        alt="linkedin"></a></li>
-                            <li class="other-site__item"><a class="other-site__link" href="/"><img
-                                        class="other-site__icon" src="assets/icons/Logo--pinterest.png"
-                                        alt="pinterest"></a></li>
-                            <li class="other-site__item"><a class="other-site__link" href="/"><img
-                                        class="other-site__icon" src="assets/icons/Logo--skype.png" alt="skype"></a>
+                            <li class="other-site__item"><a class="other-site__link" href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        viewBox="0 0 50 50" style="fill:#FFFFFF;">
+                                        <path
+                                            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                                        </path>
+                                    </svg>
+                                </a></li>
+                            <li class="other-site__item"><a class="other-site__link" href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        viewBox="0,0,256,256">
+                                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(5.12,5.12)">
+                                                <path
+                                                    d="M25,2c-12.68213,0 -23,10.31787 -23,23c0,9.88416 6.26758,18.33026 15.03638,21.57697c-0.25256,-2.25159 -0.21295,-5.93903 0.2038,-7.72437c0.39026,-1.677 2.52124,-10.68713 2.52124,-10.68713c0,0 -0.64331,-1.28833 -0.64331,-3.1911c0,-2.99017 1.73242,-5.22119 3.88983,-5.22119c1.83496,0 2.71979,1.37762 2.71979,3.0282c0,1.8457 -1.17346,4.60266 -1.78125,7.15784c-0.5069,2.14093 1.07336,3.88654 3.18365,3.88654c3.82123,0 6.75848,-4.0296 6.75848,-9.84534c0,-5.14758 -3.698,-8.74719 -8.97955,-8.74719c-6.11676,0 -9.70728,4.58856 -9.70728,9.33099c0,1.84735 0.71118,3.82867 1.6001,4.90698c0.17529,0.21332 0.20093,0.39941 0.14886,0.61603c-0.1629,0.67889 -0.52509,2.13928 -0.59705,2.4386c-0.09344,0.39447 -0.31177,0.47632 -0.71863,0.28693c-2.68579,-1.25031 -4.3645,-5.17566 -4.3645,-8.32959c0,-6.78156 4.92682,-13.0108 14.20654,-13.0108c7.45886,0 13.25476,5.31384 13.25476,12.41791c0,7.41003 -4.67291,13.37299 -11.15686,13.37299c-2.17889,0 -4.22638,-1.13202 -4.92676,-2.46918c0,0 -1.07831,4.10486 -1.34045,5.11121c-0.45245,1.74042 -2.38928,5.34601 -3.36157,6.9837c2.22424,0.71851 4.59357,1.11102 7.05377,1.11102c12.68262,0 23,-10.31738 23,-23c0,-12.68213 -10.31738,-23 -23,-23z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a></li>
+                            <li class="other-site__item"><a class="other-site__link" href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        viewBox="0,0,256,256">
+                                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(5.12,5.12)">
+                                                <path
+                                                    d="M14.28125,0c-7.87109,0 -14.28125,6.32422 -14.28125,14.09375c0,2.38281 0.62109,4.70703 1.78125,6.78125c-0.27344,1.4375 -0.40625,2.91797 -0.40625,4.375c0,13 10.69922,23.5625 23.875,23.5625c1.35156,0 2.70313,-0.08984 4.03125,-0.3125c1.97656,0.98828 4.19922,1.5 6.4375,1.5c7.87109,0 14.28125,-6.32422 14.28125,-14.09375c0,-2.08594 -0.46094,-4.07812 -1.34375,-5.9375c0.32031,-1.53516 0.5,-3.12109 0.5,-4.71875c0,-12.99609 -10.73047,-23.5625 -23.90625,-23.5625c-1.23828,0 -2.48828,0.09375 -3.71875,0.28125c-2.19531,-1.28516 -4.68359,-1.96875 -7.25,-1.96875zM25.09375,9.375c2.04688,0 3.83984,0.22266 5.34375,0.6875c1.50781,0.46094 2.78516,1.07422 3.78125,1.84375c1.00781,0.77734 1.77734,1.60547 2.25,2.46875c0.47656,0.87109 0.71875,1.75781 0.71875,2.59375c0,0.80859 -0.34375,1.51563 -0.96875,2.15625c-0.625,0.64063 -1.41016,0.96875 -2.34375,0.96875c-0.84766,0 -1.50781,-0.19531 -1.96875,-0.59375c-0.42969,-0.375 -0.88281,-0.94531 -1.375,-1.78125c-0.57031,-1.07031 -1.23828,-1.94141 -2.03125,-2.53125c-0.76953,-0.57422 -2.07812,-0.84375 -3.84375,-0.84375c-1.64062,0 -2.98047,0.29688 -3.96875,0.9375c-0.95703,0.61719 -1.40625,1.34766 -1.40625,2.1875c0,0.51563 0.16016,0.94141 0.46875,1.3125c0.32813,0.39063 0.76172,0.71484 1.34375,1c0.60156,0.29688 1.22266,0.55078 1.84375,0.71875c0.63672,0.17188 1.72266,0.44531 3.1875,0.78125c1.85156,0.39453 3.55469,0.80859 5.0625,1.28125c1.52344,0.48438 2.83203,1.08984 3.90625,1.78125c1.09375,0.70313 1.97656,1.60547 2.59375,2.6875c0.61719,1.08203 0.90625,2.41016 0.90625,3.96875c-0.00391,1.85938 -0.52734,3.54688 -1.59375,5.03125c-1.0625,1.48047 -2.62891,2.67188 -4.65625,3.5c-2.00781,0.82031 -4.41797,1.21875 -7.15625,1.21875c-3.28906,0 -6.03906,-0.55859 -8.1875,-1.6875c-1.53906,-0.81641 -2.82422,-1.94531 -3.78125,-3.3125c-0.97656,-1.38281 -1.46875,-2.73828 -1.46875,-4.0625c0,-0.82422 0.33594,-1.53516 0.96875,-2.125c0.62891,-0.57812 1.41797,-0.875 2.375,-0.875c0.78516,0 1.48047,0.22656 2.03125,0.6875c0.53125,0.44141 0.98047,1.09766 1.34375,1.9375c0.40625,0.91797 0.83984,1.66797 1.3125,2.28125c0.44531,0.58203 1.08203,1.08594 1.90625,1.46875c0.82813,0.39063 1.96484,0.59375 3.34375,0.59375c1.89453,0 3.42969,-0.40234 4.59375,-1.1875c1.14063,-0.76562 1.71875,-1.68359 1.71875,-2.8125c0,-0.89062 -0.3125,-1.60937 -0.90625,-2.15625c-0.625,-0.57422 -1.44531,-1.00781 -2.4375,-1.3125c-1.04297,-0.31641 -2.44141,-0.66797 -4.1875,-1.03125c-2.375,-0.50391 -4.39453,-1.10937 -6,-1.78125c-1.64453,-0.69141 -2.96875,-1.65234 -3.9375,-2.84375c-0.98437,-1.21484 -1.5,-2.71094 -1.5,-4.5c0,-1.70703 0.52734,-3.26953 1.5625,-4.59375c1.01953,-1.3125 2.51172,-2.33203 4.4375,-3.03125c1.89844,-0.69531 4.16406,-1.03125 6.71875,-1.03125z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="other-site__item"><a class="other-site__link" href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        viewBox="0,0,256,256">
+                                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(5.12,5.12)">
+                                                <path
+                                                    d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="other-site__item"><a class="other-site__link" href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        viewBox="0,0,256,256">
+                                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <g transform="scale(5.12,5.12)">
+                                                <path
+                                                    d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
