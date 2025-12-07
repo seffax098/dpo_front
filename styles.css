@@ -644,4 +644,8 @@ footer {
     .footer__container {
         margin: auto auto 0;
     }
+
+    .other-site__list {
+        gap: 10px;
+    }
 }
