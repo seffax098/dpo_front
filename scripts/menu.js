@@ -25,7 +25,7 @@ navOverlay.addEventListener('click', toggleMenu);
 const navLinks = document.querySelectorAll('.nav__link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 600) {
             toggleMenu();
         }
     });
@@ -38,27 +38,27 @@ document.addEventListener('keydown', (e) => {
 });
 // Закрытие меню при изменении размера окна (если перешли на десктоп)
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 768 && mainNav.classList.contains('active')) {
+    if (window.innerWidth > 600 && mainNav.classList.contains('active')) {
         toggleMenu();
     }
 });
 
 
 
-// // Кнопка "Наверх"
-// const scrollTopButton = document.getElementById('scrollTop');
-// // Показываем кнопку после скролла
-// window.addEventListener('scroll', () => {
-//     if (window.scrollY > 300) {
-//         scrollTopButton.classList.add('visible');
-//     } else {
-//         scrollTopButton.classList.remove('visible');
-//     }
-// });
-// // Прокрутка к началу страницы
-// scrollTopButton.addEventListener('click', () => {
-//     window.scrollTo({
-//         top: 0,
-//         behavior: 'smooth'
-//     });
-// });
+// Кнопка "Наверх"
+const scrollTopButton = document.getElementById('scrollTop');
+// Показываем кнопку после скролла
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollTopButton.classList.add('visible');
+    } else {
+        scrollTopButton.classList.remove('visible');
+    }
+});
+// Прокрутка к началу страницы
+scrollTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
