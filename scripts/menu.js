@@ -25,9 +25,11 @@ navOverlay.addEventListener('click', toggleMenu);
 const navLinks = document.querySelectorAll('.nav__link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        if (window.innerWidth <= 600) {
-            toggleMenu();
-        }
+        setTimeout(() => {
+            if (window.innerWidth <= 600) {
+                toggleMenu();
+            }
+        }, 50)
     });
 });
 // Закрытие меню при нажатии Escape
@@ -42,7 +44,6 @@ window.addEventListener('resize', () => {
         toggleMenu();
     }
 });
-
 
 
 // Кнопка "Наверх"
