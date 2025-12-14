@@ -130,11 +130,18 @@ section {
 }
 
 body {
-    margin-top: 24px;
+    margin-top: 14px;
     font-family: 'Inter', system-ui, sans-serif;
 }
 
 header {
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.header {
     max-width: 1440px;
     margin: auto;
 }
@@ -145,17 +152,28 @@ header {
     margin-bottom: 11px;
 }
 
+.header__right {
+    display: flex;
+    gap: 10px;
+    height: 20px;
+}
+
 .header__cart {
     width: 20px;
-    margin-right: 10px;
 }
 
 .header__profile {
     width: 20px;
 }
 
+.line {
+    border: 0;
+    height: 2px;
+    background-color: #ebe8f4;
+}
+
 .header__bottom {
-    margin: 20px 20px 70px;
+    margin: 20px 20px 10px;
 }
 
 .nav__list {
@@ -179,6 +197,40 @@ header {
     transform: translateY(2px);
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    padding: 12px 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle__line {
+    width: 100%;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+/* Состояние открытого меню */
+.menu-toggle.active .menu-toggle__line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 .container {
     max-width: 85%;
     margin: auto auto 150px;
@@ -187,6 +239,7 @@ header {
 /* About brand */
 .brand__container {
     display: flex;
+    margin-top: 50px;
 }
 
 .brand__left {
@@ -194,6 +247,10 @@ header {
     background-color: var(--dark-primary);
     width: 60%;
     padding: 4%;
+}
+
+.brand__right {
+    width: 40%;
 }
 
 .brand__content {
@@ -648,4 +705,24 @@ footer {
     .other-site__list {
         gap: 10px;
     }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: white;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 80px 30px 30px;
+        transition: right 0.4s ease;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    
 }
